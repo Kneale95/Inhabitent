@@ -43,6 +43,53 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -222,6 +269,18 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: Merriweather;
+  src: url(../../media/fonts/Merriweather/Merriweather-Light.ttf) format("truetype"); }
+
+@font-face {
+  font-family: Novovento Sans Web;
+  src: url(../../media/fonts/Novecento/Novecentosanswide-DemiBold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: Novovento Sans Web Normal;
+  src: url(../../media/fonts/Novecento/Novecentosanswide-Normal.ttf) format("truetype"); }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -656,6 +715,10 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+body {
+  font-size: 1rem;
+  font-family: "Merriweather"; }
+
 .containter {
   margin-left: auto;
   margin-right: auto;
@@ -692,7 +755,42 @@ object {
       color: #248A83; }
 
 .site-footer {
-  height: 300px;
-  width: 100%;
+  height: 350px;
   background-image: url(../../media/images/dark-wood.png);
   background-size: 500px 500px; }
+
+.footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.footer-info {
+  margin-top: 60px;
+  width: 25%; }
+  .footer-info p, .footer-info a {
+    color: white;
+    text-decoration: none; }
+  .footer-info span {
+    font-weight: bold; }
+
+.site-info div h3 {
+  color: #d99054;
+  font-size: 1.2rem;
+  font-family: "Novovento Sans Web";
+  font-weight: bold;
+  margin-bottom: 1.5rem; }
+
+.footer-image {
+  background-image: url(../../media/images/logos/inhabitent-logo-text.svg);
+  background-size: 250px 50px;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 50px;
+  margin-left: 280px; }
+
+.copyright-footer {
+  text-align: center;
+  color: white;
+  font-family: "Novovento Sans Web Normal";
+  margin-top: 40px; }
