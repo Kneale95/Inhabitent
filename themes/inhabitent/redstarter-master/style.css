@@ -656,3 +656,43 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.containter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.5); }
+  .site-header .containter {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+.site-branding {
+  background-image: url(../../media/images/logos/inhabitent-logo-tent.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  fill: #248A83;
+  width: 100%;
+  height: 30px; }
+
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .main-navigation ul li {
+    padding-left: 1.5rem; }
+    .main-navigation ul li a {
+      color: #248A83; }
+
+.site-footer {
+  height: 300px;
+  width: 100%;
+  background-image: url(../../media/images/dark-wood.png);
+  background-size: 500px 500px; }
