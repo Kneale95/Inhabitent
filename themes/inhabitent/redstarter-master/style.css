@@ -719,6 +719,19 @@ body {
   font-size: 1rem;
   font-family: "Merriweather"; }
 
+.site-content {
+  display: -ms-flexbox;
+  display: flex; }
+  .site-content .site-main {
+    -ms-flex: 1 0 70%;
+        flex: 1 0 70%; }
+
+.widget-area {
+  -ms-flex: 1 0 30%;
+      flex: 1 0 30%;
+  border-left: 1px solid grey;
+  margin-top: 48px; }
+
 .containter {
   margin-left: auto;
   margin-right: auto;
@@ -753,6 +766,93 @@ body {
     padding-left: 1.5rem; }
     .main-navigation ul li a {
       color: #248A83; }
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../../media/images/home-hero.jpg);
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+  .hero .hero-logo {
+    background: url(../../media/images/logos/inhabitent-logo-full.svg);
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px; }
+
+.about-hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.shop-stuff {
+  text-align: center; }
+  .shop-stuff .shop-stuff-items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    .shop-stuff .shop-stuff-items div {
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 235px;
+      height: 245px;
+      border: 1px solid black; }
+
+.do-stuff {
+  margin-left: 10%;
+  text-align: center; }
+
+.sleep-stuff {
+  margin-right: 10%;
+  text-align: center; }
+
+.post {
+  margin-left: 120px;
+  margin-top: 47px;
+  margin-right: 50px; }
+
+.entry-header {
+  position: relative; }
+  .entry-header img {
+    width: 760px; }
+  .entry-header .entry-title {
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    line-height: 1.2;
+    font-size: 2.1rem;
+    font-family: "Novovento Sans Web";
+    background-color: #248A83;
+    max-width: 70%;
+    padding: .75rem 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+    .entry-header .entry-title a {
+      text-decoration: none;
+      color: white; }
+
+.entry-meta {
+  color: white;
+  position: absolute;
+  bottom: 6px;
+  background-color: #248A83;
+  right: 0;
+  font-family: "Novovento Sans Web Normal";
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase; }
+
+.entry-content {
+  max-width: 760px; }
 
 .site-footer {
   height: 350px;
