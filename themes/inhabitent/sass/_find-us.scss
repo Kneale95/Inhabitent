@@ -1,0 +1,46 @@
+label{
+    text-transform: uppercase;
+    font-family: "Novovento Sans Web Normal"
+}
+
+input[type=submit]{
+    border: 1px solid black;
+    text-decoration: none;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+    background-color:#248A83;
+    color:white;
+    border-color: #248A83;
+    box-shadow:none;
+    border-radius: 0;
+    font-size:.9rem;
+    text-shadow:none;
+}
+
+input[type=submit]:hover{
+    box-shadow:none;
+    background-color:#19625D;
+    color:white;
+    border-color: #248A83;
+}
+
+.find-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Novovento Sans Web";
+    font-size: 2.4rem;
+}
+.seriously{
+    font-size: 2.1rem;
+    color:#2F1339;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-weight: bold;
+    font-family: "Novovento Sans Web";
+    margin-bottom: 24px;
+}
+
+.require{
+    color: #d99054;
+}

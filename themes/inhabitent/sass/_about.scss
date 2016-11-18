@@ -1,0 +1,50 @@
+.group:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+.about{
+    max-width: 800px;
+}
+
+.about-hero{
+    height: 100vh;
+    width:100%;
+    background:linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h1{
+        font-size: 3rem;
+        font-weight: bold;
+        color:white;
+        font-family: 'Novovento Sans Web';
+        text-transform: uppercase;
+    }
+}
+
+.our-story,.our_team{
+    h2{
+        color:#2f1339;
+        text-align: center;
+        font-size: 2rem;
+        flex: 1 0 100%;
+        font-family: "Novovento Sans Web";
+        text-transform: uppercase;
+        
+    }
+}

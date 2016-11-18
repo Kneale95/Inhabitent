@@ -1,0 +1,39 @@
+.widget-area{
+    padding-left: 5%;
+    padding-top:48px;
+    border-left:1px solid #E1E1E1;
+    max-width:305px;
+
+}
+.widget-title{
+    color: #2F1339;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-family: "Novecento Sans Web";
+    letter-spacing: 2px;
+}
+
+.widget{
+    text-align: left;
+    margin-bottom: 40px;
+    ul{
+    list-style-type: none;
+    margin: 0;
+    
+    }
+}
+
+.widget{
+    .contact{
+        i{
+            margin-right: .5rem;
+            width:20px;
+        }
+    }
+}
+
+.day-of-week{
+    font-weight: 700;
+}

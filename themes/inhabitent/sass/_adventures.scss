@@ -1,0 +1,137 @@
+.adventures{
+    clear:both;
+}
+
+.canoe-girl{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(../../media/images/adventure-photos/canoe-girl.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    height: 540px;
+    width: 540px;
+    float: left;
+
+    h3{
+        font-size: 3rem;
+        color:white;
+        line-height: 1.25;
+        margin-top: 50px;
+        margin-left: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.beach-bonfire{
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(../../media/images/adventure-photos/beach-bonfire.jpg);
+    width: 560px;
+    height: 250px;
+    background-size: cover;
+    background-position:center bottom;
+    float: right;
+    
+
+    h3{
+        font-size:2.4rem;
+        color:white;
+        line-height: 1.25;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.mountain-hikers{
+    width: 270px;
+    height: 270px;
+    background:  linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(../../media/images/adventure-photos/mountain-hikers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    float:right;
+    margin-top:20px;
+    
+
+    h3{
+        font-size: 1.6rem;
+        color:white;
+        line-height: 1.25;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+}
+.night-sky{
+    width: 270px;
+    height: 270px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url(../../media/images/adventure-photos/night-sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    float:right;
+    margin-top:20px;
+    margin-left:20px;
+    
+
+        h3{
+        font-size: 1.6rem;
+        color:white;
+        line-height: 1.25;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    }
+    
+}
+
+    .adventures a{
+        background-color: transparent;
+        color:white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border:1px solid white;
+        margin-left: 20px;
+    }
+
+    .adventures a:hover{
+        background-color: #248A83;
+        border-color:#248A83;
+    }
+    
+    
+.canoe-girl{
+
+    .button{
+    margin-top:20px;
+
+    }
+}
+
+.more-adventures{
+    margin-bottom: 100px;
+    
+    .button{
+        transform: translateY(30px);
+    }
+}
