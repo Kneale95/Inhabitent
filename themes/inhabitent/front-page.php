@@ -32,28 +32,38 @@ get_header(); ?>
 		?>
 		</div> <!-- shop stuff -->
 </section>
+
 <section class="front-journal container"> 
 	 <h2>Inhabitent Journal</h2>
-	<div class ="front-posts">
+	<div class ="container">
 
-<?php
-			$args = array(
-				'post_type' =>'post',
-				'order' => 'DSC',
-				'posts_per_page' => 3,);
-				$product_posts = get_posts( $args ); // returns an array of posts ?>
-				<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
-					<div class="journal-entries">
-						<?php the_post_thumbnail(); ?>
-						<?php the_date(); ?>
-						<?php comments_number(); ?>
-						<?php the_title(); ?>
-					</div>
+	<ul class="front-posts">
+		<?php
+		$args = array(  'numberposts'       => 3,
+						'orderby'           => 'post_date',
+						'order'             => 'DESC',
+						'post_type'         => 'post',
+					);
+		$journal_post = get_posts( $args ); // returns an array of posts                
+	?>
+	<?php foreach ( $journal_post as $post ) : setup_postdata( $post ); ?>
+		<li>
+			<div class="front-thumbnail">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail( 'medium-large' ); ?>
+			<?php endif; ?>
+			</div>
 
-				<?php endforeach; wp_reset_postdata(); ?>
-				
-	</div>
-	
+			<div class="journal-entries">
+				<p class="entry-meta"><?php echo get_the_date(); ?> / <?php comments_number(); ?></p>
+
+				<p class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+				<p><a class="read-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read Entry</a></p>
+			</div>
+		</li>
+	<?php endforeach; wp_reset_postdata(); ?>
+	</ul>
+
 </section>
 <section class="latest-adventures container">
 	<h2>Latest Adventures</h2>

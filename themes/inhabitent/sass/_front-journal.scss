@@ -1,8 +1,47 @@
 .front-posts{
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+    margin:0;
+    li{
+    border: 1px solid #E1E1E1;
+    max-width: 375px;
+    
     img{
-        width: 375px;
+        max-width: 356px;
         height: 250px;
+        border-bottom: 5px solid #E1E1E1;
+            }
+        }
+    }
+
+.journal-entries{
+    .entry-meta{
+        position: inherit;
+        bottom: inherit;
+        background-color: transparent;
+        color:grey;
+        margin-bottom: 0px;
+        padding: 0px;
+        
+    }
+}
+
+.entry-title{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    a{
+    color: #19625d;
+    text-decoration: none;
+    font-family: "Novovento Sans Web Normal";
+    font-weight: bold;
+    }
+}
+
+.entry-title{
+    a:hover{
+        color:#691339;
     }
 }
