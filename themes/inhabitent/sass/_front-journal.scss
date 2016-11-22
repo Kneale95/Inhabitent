@@ -5,7 +5,7 @@
     margin:0;
     li{
     border: 1px solid #E1E1E1;
-    max-width: 375px;
+    max-width: 358px;
     
     img{
         max-width: 356px;
@@ -16,6 +16,7 @@
     }
 
 .journal-entries{
+    padding:12px;
     .entry-meta{
         position: inherit;
         bottom: inherit;
@@ -45,3 +46,4 @@
         color:#691339;
     }
 }
+

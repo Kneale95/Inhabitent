@@ -822,6 +822,81 @@ body {
   margin-right: 10%;
   text-align: center; }
 
+.error404 {
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-title {
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Novovento Sans Web'; }
+
+.error404 .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+  .error404 .site-content .site-main {
+    -ms-flex: 1 0 70%;
+        flex: 1 0 70%; }
+
+.error404 .content-area {
+  padding-top: 56px;
+  padding-right: 56px; }
+
+.error404 .page-content {
+  font-family: 'Merriweather'; }
+  .error404 .page-content .search-form fieldset {
+    border: none; }
+    .error404 .page-content .search-form fieldset button {
+      display: none; }
+
+.widget_recent_entries h2 {
+  font-size: 1.5rem;
+  color: #2f1339;
+  font-family: 'Novovento Sans Web';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; }
+
+.widget .widgettitle {
+  font-size: 1.5rem;
+  color: #2f1339;
+  font-family: 'Novovento Sans Web';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  margin-bottom: 1.5rem; }
+
+.error404 .widget p {
+  margin-bottom: .75rem; }
+
+.error404 select {
+  font-family: 'Merriweather'; }
+
+.error404 fieldset {
+  padding-left: 0px; }
+
+.error404 input {
+  background-color: #F4F4F4; }
+
+.error404 a {
+  text-decoration: none;
+  color: #19625d;
+  font-family: 'Merriweather';
+  line-height: 1.75; }
+
+.error404 a:visited {
+  color: #19625d; }
+
+.error404 a:hover {
+  color: #2f1339; }
+
 .group:after {
   visibility: hidden;
   display: block;
@@ -843,7 +918,7 @@ body {
 .about-hero {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -872,6 +947,10 @@ body {
       flex: 1 0 100%;
   font-family: "Novovento Sans Web";
   text-transform: uppercase; }
+
+.wpcf7-form {
+  margin-bottom: 6rem;
+  max-width: 760px; }
 
 label {
   text-transform: uppercase;
@@ -927,7 +1006,7 @@ input[type=submit]:hover {
   line-height: 1.25;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
-  font-family: "Novecento Sans Web";
+  font-family: 'Novovento Sans Web';
   letter-spacing: 2px; }
 
 .widget {
@@ -978,6 +1057,10 @@ input[type=submit]:hover {
 .thumbnail {
   height: 250px;
   width: 250px; }
+
+.stuff_titles {
+  color: #19625d;
+  text-decoration: none; }
 
 .post {
   margin-top: 80px;
@@ -1087,6 +1170,10 @@ input[type=submit]:hover {
 .button:visited {
   color: white; }
 
+.product-container {
+  display: -ms-flexbox;
+  display: flex; }
+
 .front-posts {
   display: -ms-flexbox;
   display: flex;
@@ -1096,19 +1183,21 @@ input[type=submit]:hover {
   margin: 0; }
   .front-posts li {
     border: 1px solid #E1E1E1;
-    max-width: 375px; }
+    max-width: 358px; }
     .front-posts li img {
       max-width: 356px;
       height: 250px;
       border-bottom: 5px solid #E1E1E1; }
 
-.journal-entries .entry-meta {
-  position: inherit;
-  bottom: inherit;
-  background-color: transparent;
-  color: grey;
-  margin-bottom: 0px;
-  padding: 0px; }
+.journal-entries {
+  padding: 12px; }
+  .journal-entries .entry-meta {
+    position: inherit;
+    bottom: inherit;
+    background-color: transparent;
+    color: grey;
+    margin-bottom: 0px;
+    padding: 0px; }
 
 .entry-title {
   font-size: 1.3rem;
@@ -1219,6 +1308,9 @@ input[type=submit]:hover {
   .more-adventures .button {
     transform: translateY(30px); }
 
+.latest-adventures h2 {
+  margin-top: 3.5rem; }
+
 .site-footer {
   height: 350px;
   background-image: url(../../media/images/dark-wood.png);
@@ -1228,7 +1320,8 @@ input[type=submit]:hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  width: 1349px; }
 
 .footer-info {
   margin-top: 60px;
