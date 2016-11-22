@@ -7,6 +7,12 @@
 .post-type-archive{
     .page-header{
     text-align: center;
+        h1{
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
     }
 }
 .grid{
@@ -41,4 +47,34 @@
 .stuff_titles{
     color:#19625d;
     text-decoration: none;
+}
+
+.shop-stuff-catagories{
+    text-transform: uppercase;
+    font-family: 'Novovento Sans Web Normal';
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px dashed lightgray;
+    .stuff_titles:last-child{
+        padding-right: 0px;
+    }
+}
+
+.shop-stuff-catagories{
+    a{
+        padding-right: 50px;
+        color:#468A83;
+    }
+}
+.shop-stuff-catagories{
+  a:visited{
+      color: #468A83;
+  }
+}
+
+.shop-stuff-catagories{
+  a:hover{
+      color: #2f1339;
+  }
 }
