@@ -45,7 +45,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 
-@import "reset";
 // Imported but not included in the stylesheet.
 
 @import "variables";
@@ -73,7 +72,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "products-page";
 @import "journal";
 @import "shop-stuff";
-@import "single-product";
+@import "single-products";
+@import "product-taxonomy";
 @import "front-journal";
 @import "adventures";
 @import "footer";

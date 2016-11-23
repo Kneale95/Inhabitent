@@ -19,6 +19,7 @@
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 .product{
     display: flex;
@@ -36,6 +37,10 @@
     font-size: 1rem;
     padding: .75rem 1rem;
     color: #2f1339;
+
+    span{
+        font-family: 'Merriweather';
+    }
 }
 
 .thumbnail{
@@ -78,3 +83,11 @@
       color: #2f1339;
   }
 }
+
+.product-price-summary{
+    span:last-child{
+        font-size: .9rem;
+
+    }
+}
+

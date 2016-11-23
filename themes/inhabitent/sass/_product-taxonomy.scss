@@ -1,0 +1,16 @@
+.tax-product_type{
+    display: flex;
+    flex-direction: column;
+    .shop-stuff-catagories{
+        text-align: center;
+        padding-top: 50px;
+        text-transform: none;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        p{
+            font-family: 'Merriweather';
+            font-weight: none;
+            font-size: 1rem;
+        }
+    }
+}

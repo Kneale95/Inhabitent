@@ -26,6 +26,7 @@
         font-family: "Novovento Sans Web";
         font-weight: bold;
         margin-bottom: 1.5rem;
+        letter-spacing: 2px;
 
     }
 }
@@ -44,4 +45,27 @@
     color:white;
     font-family: "Novovento Sans Web Normal";
     margin-top:40px;
+}
+
+.contact-info{
+    margin-left: 4rem;
+    i{
+        margin-right: .5rem;
+    }
+}
+
+.footer-icons{
+    color:white;
+}
+
+.site-footer{
+    i{
+        font-size: 1.25rem;
+    }
+}
+
+.site-footer{
+    p,a{
+        font-family: 'Merriweather'
+    }
 }

@@ -1,0 +1,56 @@
+.single-product{
+    .content-area{
+        margin-top:6rem;
+        margin-bottom: 7rem;
+    }
+}
+
+.single-products{
+    display: flex;
+    justify-content: space-between;
+    
+    span{
+        font-family: 'Merriweather';
+        line-height: 1.75;
+
+    }
+
+    .product-thumb{
+
+        img{
+            max-width: 535px;
+        }
+    }
+}
+
+.single-product-text{
+    max-width: 537px;
+    margin-left: 3rem;
+
+    h2{
+        color:#d99054;
+        font-size: 2.4rem;
+        font-family: 'Novovento Sans Web';
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.single-product-price{
+    font-size: 1.8rem;
+    font-family: 'Novovento Sans Web Normal';
+}
+
+.product-button, .product-button:visited{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: .75rem 1.5rem;
+    text-transform: uppercase;
+};
+
+.product-button:hover{
+    background-color:#248A83;
+    color:white;
+    border-color: #248A83;
+}

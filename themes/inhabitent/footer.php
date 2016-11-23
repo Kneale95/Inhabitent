@@ -15,8 +15,13 @@
 						<!--<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>-->
 						<div class = "contact-info footer-info">
 							<h3>CONTACT INFO</h3>
-							<p><a href="#">info@inhabitent.com</a></p>
-							<p><a href="#">778-456-7891</a></p>
+							<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">info@inhabitent.com</a></p>
+							<p><i class="fa fa-phone" aria-hidden="true"></i><a href="#">778-456-7891</a></p>
+							<div class="footer-icons">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+								<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+							</div>
 						</div>
 						<div class="hours footer-info">
 							<h3>BUSINESS HOURS</h3>
