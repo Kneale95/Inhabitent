@@ -3,6 +3,14 @@
     background-size: contain;
     width:400px;
 }
+
+.search-form{
+    .search-field{
+        margin-left: 10px;
+        border:none;
+        text-transform: uppercase;
+    }
+}
 body{
     font-size: 1rem;
 }

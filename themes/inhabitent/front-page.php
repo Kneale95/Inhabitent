@@ -27,7 +27,7 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri();?>/media/images/product-type-icons/<?php echo $term->slug; ?>.svg">
 			<?php
 			echo "<p> $term->description </p> ";
-			echo "<a href= '$url' class='button'> $term->name </a> </div>";
+			echo "<a href= '$url' class='button'> $term->name Stuff </a>  </div>";
 		}
 		?>
 		</div> <!-- shop stuff -->
