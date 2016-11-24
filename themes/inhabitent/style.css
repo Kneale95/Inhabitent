@@ -673,6 +673,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+#login {
+  background-position: bottom center;
+  background-size: contain;
+  width: 400px; }
+
 body {
   font-size: 1rem; }
 
@@ -757,7 +762,7 @@ body {
   border: 0; }
 
 .main-navigation li:last-child {
-  padding-right: 10px; }
+  padding-right: 20px; }
 
 .search-icon {
   color: #468a83; }

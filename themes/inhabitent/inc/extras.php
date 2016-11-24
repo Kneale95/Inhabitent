@@ -21,17 +21,18 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
-function change_my_wp_login_image() {
-echo "
-<style>
-body.login #login h1 a {
-background: url('".get_bloginfo('template_url')."/custom/images/new-login-logo.png') 8px 0 no-repeat transparent;
-height:100px;
-width:320px; }
-</style>
-";
-}
-add_action("login_head", "change_my_wp_login_image");
+// function change_my_wp_login_image() {
+// echo "
+// <style>
+// body.login #login h1 a {
+// background: url('"get_template_directory_uri('tem')."/custom/images/new-login-logo.png') 8px 0 no-repeat transparent;
+// background: url('".get_bloginfo('template_url')."/custom/images/new-login-logo.png') 8px 0 no-repeat transparent;
+// height:100px;
+// width:320px; }
+// </style>
+// ";
+// }
+// add_action("login_head", "change_my_wp_login_image");
 
 /**
 * Custom About Page background image
@@ -116,22 +117,38 @@ add_filter( 'get_the_excerpt', 'red_wp_trim_excerpt' );
 
 function enqueue_our_required_stylesheets(){
 	wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'); 
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script ( 'search-bar', get_template_directory_uri() . '/js/scripts.js', array ( 'jquery' ), false, true);
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 }
+
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
-function my_theme_archive_title( $title ) {
-    if ( is_category() ) {
-        $title = single_cat_title( '', false );
-    } elseif ( is_tag() ) {
-        $title = single_tag_title( '', false );
-    } elseif ( is_author() ) {
-        $title = '<span class="vcard">' . get_the_author() . '</span>';
-    } elseif ( is_post_type_archive() ) {
-        $title = post_type_archive_title( '', false );
-    } elseif ( is_tax() ) {
-        $title = single_term_title( '', false );
-		   }
-  
-    return $title;
-}
+function title_filter( $title ) {
+   if ( is_category() ) {
+       $title = single_cat_title( '', false );
+   } elseif ( is_tag() ) {
+       $title = single_tag_title( '', false );
+   } elseif ( is_author() ) {
+       $title = '<span class="vcard">' . get_the_author() . '</span>';
+   } elseif ( is_post_type_archive() ) {
+       $title = post_type_archive_title( '', false );
+   } elseif ( is_tax() ) {
+       $title = single_term_title( '', false );
+   }
  
+   return $title;
+}
+
+add_filter( 'get_the_archive_title', 'title_filter' );
+
+
+function custom_login_logo() {
+    echo '<style type="text/css">
+        h1 a { background-image:url(file:///C:/MAMP/htdocs/tent/wp-content/themes/inhabitent/media/images/logos/inhabitent-logo-text-dark.svg) !important; }
+    </style>';
+}
+
+add_action('login_head', 'custom_login_logo');
