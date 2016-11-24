@@ -1052,14 +1052,30 @@ p:last-child {
   margin-bottom: 40px; }
   .widget ul {
     list-style-type: none;
-    margin: 0; }
+    margin: 0;
+    padding-left: 0; }
 
 .widget .contact i {
   margin-right: .5rem;
   width: 20px; }
 
+.widget .contact i:last-child {
+  margin-right: .5rem;
+  width: 20px;
+  height: 50px; }
+
 .day-of-week {
   font-weight: 700; }
+
+.widget .contact:last-child {
+  display: -ms-flexbox;
+  display: flex; }
+
+.widget a {
+  color: #468a83; }
+
+.widget a:hover {
+  color: #2F1339; }
 
 .post-type-archive .site-content {
   padding-top: 48px; }
