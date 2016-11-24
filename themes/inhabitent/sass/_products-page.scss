@@ -87,7 +87,22 @@
 .product-price-summary{
     span:last-child{
         font-size: .9rem;
+        float:right;
+        background-color: white;
+
 
     }
 }
 
+.product-price-summary{
+    span:first-child:before{
+        content:".......................................................";
+        float:left;
+        width:0px;
+    }
+}
+.product-price-summary{
+    span:first-child{
+        background-color:white;
+    }
+}

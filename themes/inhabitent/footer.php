@@ -31,7 +31,7 @@
 						</div>
 						<a href="#" class= "footer-image footer-info"></a>
 					</div>
-					<p class="copyright-footer">COPYRIGHT 2016 INHABITENT</p>
+					<p class="copyright-footer">COPYRIGHT <i class="fa fa-copyright" aria-hidden="true"></i> 2016 INHABITENT</p>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

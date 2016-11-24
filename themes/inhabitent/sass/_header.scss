@@ -64,6 +64,7 @@ body{
 }
 
 .main-navigation{
+    width:150%;
     display: flex;
     justify-content: flex-end;
     padding-right: 7rem;
@@ -79,3 +80,22 @@ body{
         }
     }
 }
+
+.header-search {
+    display: flex;
+
+}
+.search-field{
+    display: none;
+    outline:none;
+    border:0;
+}
+ .main-navigation{
+     li:last-child{
+        padding-right: 10px;
+     }
+ }
+ 
+ .search-icon{
+    color:#468a83;
+ }

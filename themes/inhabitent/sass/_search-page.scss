@@ -1,0 +1,51 @@
+.search-results{
+    display: flex;
+    .product{
+        display: inherit;
+    }
+}
+
+.search-results{
+    .entry-header{
+        .entry-title{
+            display: inherit;
+        }
+    }
+}
+
+.search-results{
+    .site-content{
+    display: flex;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+.search-results{
+    .entry-summary{
+    p{
+        line-height: 1.75;
+        }
+    }
+}
+.search-results{
+    .entry-title{
+        font-size: 2.1rem;
+        font-family: 'Novovento Sans Web Normal';
+    }
+}
+
+.search-results{
+    .entry-summary
+    p:last-child{
+        margin-bottom: 4rem;
+        margin-top: 1.5rem;
+    }
+}
+
+.search-results{
+    .page-title{
+        margin-top: 50px;
+    }
+}

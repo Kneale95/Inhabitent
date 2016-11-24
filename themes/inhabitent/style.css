@@ -733,6 +733,7 @@ body {
   margin-left: 7rem; }
 
 .main-navigation {
+  width: 150%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -745,6 +746,21 @@ body {
     padding-left: 1.5rem; }
     .main-navigation ul li a {
       color: #248A83; }
+
+.header-search {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-field {
+  display: none;
+  outline: none;
+  border: 0; }
+
+.main-navigation li:last-child {
+  padding-right: 10px; }
+
+.search-icon {
+  color: #468a83; }
 
 .hero {
   height: 100vh;
@@ -966,6 +982,37 @@ input[type=submit]:hover {
 .require {
   color: #d99054; }
 
+.search-results {
+  display: -ms-flexbox;
+  display: flex; }
+  .search-results .product {
+    display: inherit; }
+
+.search-results .entry-header .entry-title {
+  display: inherit; }
+
+.search-results .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.search-results .entry-summary p {
+  line-height: 1.75; }
+
+.search-results .entry-title {
+  font-size: 2.1rem;
+  font-family: 'Novovento Sans Web Normal'; }
+
+.search-results .entry-summary
+p:last-child {
+  margin-bottom: 4rem;
+  margin-top: 1.5rem; }
+
+.search-results .page-title {
+  margin-top: 50px; }
+
 .widget-area {
   padding-left: 5%;
   padding-top: 48px;
@@ -1063,17 +1110,27 @@ input[type=submit]:hover {
   color: #2f1339; }
 
 .product-price-summary span:last-child {
-  font-size: .9rem; }
+  font-size: .9rem;
+  float: right;
+  background-color: white; }
+
+.product-price-summary span:first-child:before {
+  content: ".......................................................";
+  float: left;
+  width: 0px; }
+
+.product-price-summary span:first-child {
+  background-color: white; }
 
 .post {
   margin-top: 80px;
   margin-right: 50px; }
 
-.entry-header {
+.blog .entry-header {
   position: relative; }
-  .entry-header img {
+  .blog .entry-header img {
     width: 760px; }
-  .entry-header .entry-title {
+  .blog .entry-header .entry-title {
     position: absolute;
     top: 0;
     margin-top: 30px;
@@ -1085,7 +1142,7 @@ input[type=submit]:hover {
     padding: .75rem 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
-    .entry-header .entry-title a {
+    .blog .entry-header .entry-title a {
       text-decoration: none;
       color: white; }
 
@@ -1231,6 +1288,7 @@ input[type=submit]:hover {
       font-size: 1rem; }
 
 .front-posts {
+  padding-left: none;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1391,7 +1449,7 @@ input[type=submit]:hover {
 .site-info div h3 {
   color: #d99054;
   font-size: 1.2rem;
-  font-family: "Novovento Sans Web";
+  font-family: 'Novovento Sans Web Normal';
   font-weight: bold;
   margin-bottom: 1.5rem;
   letter-spacing: 2px; }
@@ -1423,3 +1481,10 @@ input[type=submit]:hover {
 
 .site-footer p, .site-footer a {
   font-family: 'Merriweather'; }
+
+.site-footer i {
+  font-size: 1rem;
+  padding-right: 5px; }
+
+.copyright-footer {
+  margin-bottom: 0; }
