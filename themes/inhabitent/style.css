@@ -950,6 +950,11 @@ body {
 .our_team p, .our-story p {
   font-family: "Merriweather"; }
 
+.page-id-17 .site-main {
+  margin-top: 6rem; }
+  .page-id-17 .site-main .entry-content {
+    margin-right: 4rem; }
+
 label {
   text-transform: uppercase;
   font-family: "Novovento Sans Web Normal"; }
@@ -991,6 +996,10 @@ input[type=submit]:hover {
 
 .require {
   color: #d99054; }
+
+.page-id-17 p {
+  max-width: 760px;
+  font-family: 'Merriweather'; }
 
 .search-results {
   display: -ms-flexbox;
